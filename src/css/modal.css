@@ -1,6 +1,19 @@
+#poster1 {
+  position: absolute;
+  left: 260px;
+  top: 280px;
+}
+
+#poster2 {
+  position: absolute;
+  right: 260px;
+  top: 280px;
+}
+
 .popup-content{
-  overflow: scroll;
-  max-height: 700px; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 600px;
 }
 
 .example-warper {
@@ -77,22 +90,9 @@
   color: white;
   border-color: #2980b9;
 }
-/*
-card
-*/
-.card {
-  font-size: 12px;
-}
-.card > .header {
-  width: 100%;
-  border-bottom: 1px solid gray;
-  font-size: 14px;
-  text-align: center;
-}
 
 .modal {
   font-size: 12px;
-  overflow: scroll;
 }
 
 .modal > .actions {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Popup from "reactjs-popup";
 import Demo from "./Demo.js";
-import './App.css';
+import './css/App.css';
 
 class App extends Component {
   render() {

@@ -1,8 +1,8 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import QBvideo from "./ExampleYoutube";
-import './content.css';
-import TB from "./TomBrady.jpeg";
+import './css/content.css';
+import TB from "./image/TomBrady.jpeg";
 
 const Card = ({ title, content }) => (
   <div className="card">
@@ -31,7 +31,7 @@ const QBcontent = () => (
       미식축구의 포지션의 한 종류이자 미식축구의 꽃. 야구는 투수놀음이라는 말이 있다면 미식축구의 쿼터백은 그 선발투수보다 중요한 역할을 한다.
       라인맨 뒤에서 공을 받아 던져주는 포지션으로, 그야말로 필드의 야전사령관이자 미식축구 팀의 간판스타.
       쿼터백이라는 명칭의 어원은 초기 미식축구의 포메이션에서 유래했다.
-      러닝게임 위주였던 초기 미식축구는 
+      러닝게임 위주였던 초기 미식축구는
       <Popup
         trigger={<a><font color="FF00CC">라인맨</font></a>}
         position="bottom center"
@@ -53,7 +53,7 @@ const QBcontent = () => (
     </div>
     <div className = "star">
       <font size = "5"> Star Player : Tom Brady</font><br/>
-      <img src = {TB}></img>
+      <img src = {TB}></img><br/>
       2001년 시즌 혜성처럼 나타나서 2016년 시즌까지 뉴잉글랜드 패트리어츠의 슈퍼볼 5회 우승(최다우승)을 이끈 쿼터백.
       NFL 정규시즌-포스트시즌 통산 최다승 쿼터백. 그가 주전으로 뛰었던 16시즌동안 패트리어츠는 15번의 디비전 우승,
       12번의 챔피언쉽 진출, 그리고 8번의 슈퍼볼 진출을 이루어냈다. 현지에서는 조 몬태나와 더불어 NFL 역사상 최고의 쿼터백으로

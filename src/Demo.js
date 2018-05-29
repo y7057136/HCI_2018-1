@@ -2,7 +2,7 @@ import React from "react";
 import Warper from "./Warper";
 import Popup from "reactjs-popup";
 import QBvideo from "./ExampleYoutube";
-import './modal.css';
+import './css/modal.css';
 
 const contentStyle = {
   maxWidth: "600px",
@@ -19,9 +19,9 @@ const Card = ({ title }) => (
 );
 
 
-const CustomModal = ({format, title, content}) => (
+const CustomModal = ({format, title, content, buttonName }) => (
   <Popup
-    trigger={<button className={format} id={title}> QB </button>}
+    trigger={<button className={format} id={title}> {buttonName} </button>}
     modal
     contentStyle={contentStyle}
     scroll
