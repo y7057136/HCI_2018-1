@@ -24,6 +24,7 @@ const CustomModal = ({format, title, content}) => (
     trigger={<button className={format} id={title}> QB </button>}
     modal
     contentStyle={contentStyle}
+    scroll
   >
     {close => (
       <div className="modal">

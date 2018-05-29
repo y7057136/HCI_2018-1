@@ -1,0 +1,48 @@
+.idiom{
+  font-size: 20px;
+  border-bottom: 1px #cfcece dashed;
+}
+
+.card {
+  font-size: 12px;
+}
+
+.card > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 25px;
+  text-align: center;
+  padding: 5px;
+}
+
+.content {
+  font-size: 12px;
+  width: 100%;
+  padding: 10px 5px;
+  text-align: left;
+  color: black;
+  border-bottom: 1px #cfcece dashed;
+}
+
+.star{
+  font-size: 12px;
+  width: 100%;
+  padding: 10px 5px;
+  text-align: left;
+  color: black;
+  border-bottom: 1px #cfcece dashed;
+}
+
+.video {
+  margin-top: 2px;
+  margin-left: 0px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  }
