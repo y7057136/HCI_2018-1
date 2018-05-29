@@ -1,9 +1,10 @@
 import React from "react";
+import QB from './QBcontent.js';
 import './modal.css';
 
 export default Comp => () => (
   <div className="example-warper">
-    <Comp title = "QB1" className="position_buttonQB1"/>
-    <Comp title = "QB2" className="position_buttonQB2"/>
+    <Comp format="position_button" title="QB1" content={<QB/>}/>
+    <Comp format="position_button" title="QB2" content={<QB/>}/>
   </div>
 );

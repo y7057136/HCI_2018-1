@@ -16,7 +16,7 @@
   top: 12vw;
 }
 
-.QB1, .QB2{
+.position_button{
   font-family: "Roboto", Arial, sans-serif;
   color: white;
   cursor: pointer;
@@ -35,27 +35,17 @@
   transition: all 0.3s;
 }
 
-.QB1 {
+.position_button#QB1 {
   margin-top: 100px;
 }
 
-.QB1:hover,
-.QB1.hover {
+.position_button:hover,
+.position_button.hover {
   background-color: blue;
   color: white;
   border-color: #2980b9;
 }
 
-.QB2:hover,
-.QB2.hover {
-  background-color: blue;
-  color: white;
-  border-color: #2980b9;
-}
-
-.position_buttonQB2 {
-  margin-top: 100px;
-}
 
 .button {
   font-family: "Roboto", Arial, sans-serif;
