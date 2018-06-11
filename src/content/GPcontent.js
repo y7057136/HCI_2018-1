@@ -1,8 +1,8 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import QBvideo from "./ExampleYoutube";
-import './css/content.css';
-import imgPath from "./image/play.png"
+import QBvideo from "../ExampleYoutube";
+import '../css/content.css';
+import imgPath from "../image/play.png"
 
 const Card = ({ title }) => (
   <div className="card">
