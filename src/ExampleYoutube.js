@@ -18,7 +18,7 @@ class Example extends React.Component {
     return (
       <YouTube
         contentStyle={contentStyle}
-        videoId="2g811Eo7K8U"
+        videoId="uA4mLg42hQY"
         opts={opts}
         onReady={this._onReady}
       />
