@@ -10,7 +10,8 @@ class Offense extends Component {
         super(props);
         this.state = {
             qb: false,
-						goal: false
+						goal: false,
+						change: 0
         };
     }
 
