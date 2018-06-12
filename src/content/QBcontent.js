@@ -1,6 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import QBvideo from "../ExampleYoutube";
+import QBvideo from "../video/QB";
 import '../css/content.css';
 import TB from "../image/TomBrady.jpeg";
 

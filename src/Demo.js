@@ -24,12 +24,17 @@ class CustomModal extends Component{
   constructor(props) {
         super(props);
   }
+
+  test = () => {
+    console.log("fuck");
+  }
+
   render(){
     return(
   <Popup
     trigger={
       this.props.state ?
-      <button style = {onStyle} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
+      <button style = {onStyle} onClick={() => test()} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
       <button style = {outStyle} onMouseEnter={() => this.props.callbackFromParent(true)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button>
     }
     modal

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Offense from "./Offense.js";
+import Warper from "./Warper.js";
 import './css/App.css';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <p className="App-intro">
           <br/>
         </p>
-        <Offense/>
+        <Warper/>
       </div>
     );
   }

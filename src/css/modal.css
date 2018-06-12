@@ -1,0 +1,330 @@
+button{
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: absolute;
+  font-size: 14px;
+  border: 3px solid #cfcece;
+  background-color: red;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.offense > button{
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: absolute;
+  font-size: 14px;
+  border: 3px solid #cfcece;
+  background-color: red;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.defense > button{
+  font-family: "Roboto", Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: absolute;
+  font-size: 14px;
+  border: 3px solid #cfcece;
+  background-color: blue;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.defense > button:hover,
+.defense > button.hover {
+  background-color: red;
+  color: white;
+  border-color: #2980b9;
+}
+
+button#QB {
+  position: absolute;
+  top: 175px;
+  left: 130px;
+  width: 40px;
+  height: 40px;
+}
+
+button#FB {
+  position: absolute;
+  top: 175px;
+  left: 80px;
+  width: 40px;
+  height: 40px;
+}
+
+button#RB {
+  position: absolute;
+  top: 175px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+button#C {
+  position: absolute;
+  top: 175px;
+  left: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#G1 {
+  position: absolute;
+  top: 130px;
+  left: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#G2 {
+  position: absolute;
+  top: 220px;
+  left: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#OT1 {
+  position: absolute;
+  top: 85px;
+  left: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#OT2 {
+  position: absolute;
+  top: 265px;
+  left: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#WR1 {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#WR2 {
+  position: absolute;
+  top: 350px;
+  left: 130px;
+  width: 40px;
+  height: 40px;
+}
+
+button#TE {
+  position: absolute;
+  top: 320px;
+  left: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+
+button#MLB {
+  position: absolute;
+  top: 175px;
+  right: 155px;
+  width: 40px;
+  height: 40px;
+  font-size: 0.7em;
+}
+
+button#DT1 {
+  position: absolute;
+  top: 130px;
+  right: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#DT2 {
+  position: absolute;
+  top: 220px;
+  right: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#E1 {
+  position: absolute;
+  top: 85px;
+  right: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#E2 {
+  position: absolute;
+  top: 265px;
+  right: 200px;
+  width: 40px;
+  height: 40px;
+}
+
+button#OLB1 {
+  position: absolute;
+  top: 50px;
+  font-size: 0.7em;
+  right: 155px;
+  width: 40px;
+  height: 40px;
+}
+
+button#OLB2 {
+  position: absolute;
+  font-size: 0.7em;
+  top: 300px;
+  right: 155px;
+  width: 40px;
+  height: 40px;
+}
+
+button#CB1 {
+  position: absolute;
+  top: 15px;
+  font-size: 0.7em;
+  right: 110px;
+  width: 40px;
+  height: 40px;
+}
+
+button#CB2 {
+  position: absolute;
+  font-size: 0.7em;
+  top: 335px;
+  right: 110px;
+  width: 40px;
+  height: 40px;
+}
+
+button#SS {
+  position: absolute;
+  top: 220px;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+}
+
+button#FS {
+  position: absolute;
+  top: 130px;
+  right: 60px;
+  width: 40px;
+  height: 40px;
+}
+
+#poster1 {
+  position: absolute;
+  background-color: white;
+  color: black;
+  left: 260px;
+  top: 270px;
+}
+
+#poster2 {
+  position: absolute;
+  background-color: white;
+  color: black;
+  right: 260px;
+  top: 270px;
+}
+
+.popup-content{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 600px;
+}
+
+.example-warper {
+  position: relative;
+  background: #1bba3e;
+  width: 45vw;
+  height: 30vw;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 3px solid #000;
+}
+
+.example-warper > .qb1{
+  right: 25vw;
+  top: 12vw;
+}
+
+.button {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: absolute;
+  font-size: 14px;
+  border: 3px solid #cfcece;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover,
+.button.hover {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #2980b9;
+}
+
+.modal {
+  font-size: 12px;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+#center-line {
+  position: absolute;
+  margin: 0px;
+  border: 1px solid black;
+  height: 405px;
+  bottom: 0px;
+}

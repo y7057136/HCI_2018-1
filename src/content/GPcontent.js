@@ -1,13 +1,8 @@
 import React from "react";
-<<<<<<< HEAD:src/GPcontent.js
-import './css/content.css';
-import imgPath from "./image/play.png"
-=======
 import Popup from "reactjs-popup";
 import QBvideo from "../ExampleYoutube";
 import '../css/content.css';
 import imgPath from "../image/play.png"
->>>>>>> bd958e96318d07ed5516559563a86e55710cd64c:src/content/GPcontent.js
 
 const Card = ({ title }) => (
   <div className="card">
