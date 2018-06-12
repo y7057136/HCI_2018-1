@@ -13,8 +13,8 @@ class Warper extends Component {
 
 	changeOD = () => {
 		{ this.state.oord ?
-		this.setState({ oord: false }) :
-		this.setState({ oord: true })
+			this.setState({ oord: false }) :
+			this.setState({ oord: true })
 		}
 		console.log(this.state.oord);
   }
@@ -22,8 +22,10 @@ class Warper extends Component {
 	render(){
 		return(
 			<div className="example-warper">
-				<Offense callbackFromParent={this.changeOD}/>
-				<Defense callbackFromParent={this.changeOD}/>
+				{this.state.oord ?
+					<Offense callbackFromParent={this.changeOD}/> :
+					<Defense callbackFromParent={this.changeOD}/>
+				}
 				<div id="center-line"></div>
 			</div>
 		)

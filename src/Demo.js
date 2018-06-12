@@ -23,18 +23,16 @@ const outStyle = {
 class CustomModal extends Component{
   constructor(props) {
         super(props);
-  }
-
-  test = () => {
-    console.log("fuck");
-  }
+      }
 
   render(){
     return(
   <Popup
     trigger={
       this.props.state ?
-      <button style = {onStyle} onClick={() => test()} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
+        this.props.isGoal ?
+        <button style = {onStyle} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
+        <button style = {onStyle} onMouseDown={() => this.props.incrementCount()} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
       <button style = {outStyle} onMouseEnter={() => this.props.callbackFromParent(true)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button>
     }
     modal
@@ -52,7 +50,7 @@ class CustomModal extends Component{
               close();
             }}
           >
-            close
+          close
           </button>
         </div>
       </div>
