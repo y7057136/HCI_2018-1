@@ -23,8 +23,8 @@ class Warper extends Component {
 		return(
 			<div className="example-warper">
 				{this.state.oord ?
-					<Offense callbackFromParent={this.changeOD}/> :
-					<Defense callbackFromParent={this.changeOD}/>
+					<Offense oORd={this.state.oord} callbackFromParent={this.changeOD}/> :
+					<Defense oORd={this.state.oord} callbackFromParent={this.changeOD}/>
 				}
 				<div id="center-line"></div>
 			</div>

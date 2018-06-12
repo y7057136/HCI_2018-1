@@ -20,6 +20,18 @@ const outStyle = {
   backgroundColor: "red"
 };
 
+const goalOnStyle = {
+  borderColor: "#2980b9",
+  color: "white",
+  backgroundColor: "black"
+}
+
+const goalOutStyle = {
+  borderColor: "#cfcece",
+  color: "black",
+  backgroundColor: "white"
+}
+
 class CustomModal extends Component{
   constructor(props) {
         super(props);
@@ -50,8 +62,8 @@ class CustomModal extends Component{
   <Popup
     trigger={
       this.props.state ?
-      <button style = {onStyle} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
-      <button style = {outStyle} onMouseEnter={() => this.props.callbackFromParent(true)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button>
+      <button style = {this.props.isGoal ? goalOnStyle : this.props.oORd ? onStyle : outStyle} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
+      <button style = {this.props.isGoal ? goalOutStyle : this.props.oORd ? outStyle : onStyle} onMouseEnter={() => this.props.callbackFromParent(true)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button>
     }
     modal
     contentStyle={contentStyle}
