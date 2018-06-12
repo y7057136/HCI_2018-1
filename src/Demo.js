@@ -21,13 +21,13 @@ const outStyle = {
 };
 
 const goalOnStyle = {
-  borderColor: "#2980b9",
+  borderColor: "white",
   color: "white",
   backgroundColor: "black"
 }
 
 const goalOutStyle = {
-  borderColor: "#cfcece",
+  borderColor: "black",
   color: "black",
   backgroundColor: "white"
 }

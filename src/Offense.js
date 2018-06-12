@@ -95,7 +95,9 @@ class Offense extends Component {
 				<div className="left-poster">
 					<Comp oORd={this.props.oORd} isGoal={true} state = {this.state.goal} callbackFromParent={this.myGoalCallback} format="GoalButton" title="poster1" content={<GP/>} buttonName="골대"/>
 				</div>
-				<div className="example-warper">
+				<div className="right-poster">
+					<Comp oORd={this.props.oORd} isGoal={true} state={this.state.goal} callbackFromParent={this.myGoalCallback} format="GoalButton" title="poster2" content={<GP/>} buttonName="골대"/>
+				</div>
 				<div className="offense">
 
 					<Comp oORd={this.props.oORd} isGoal={false} last={this.state.oord} state = {this.state.qb} incrementCount={this.incrementClicked} callbackFromParent={this.myQBCallback} format="QBButton" title="QB" content={<QB/>} buttonName="QB"/>
@@ -116,10 +118,6 @@ class Offense extends Component {
 
 					<Comp oORd={this.props.oORd} isGoal={false} last={this.state.oord} state = {this.state.wr} incrementCount={this.incrementClicked} callbackFromParent={this.myWRCallback} format="WRButton" title="WR1" content={<WR/>} buttonName="WR"/>
 					<Comp oORd={this.props.oORd} isGoal={false} last={this.state.oord} state = {this.state.wr} incrementCount={this.incrementClicked} callbackFromParent={this.myWRCallback} format="WRButton" title="WR2" content={<WR/>} buttonName="WR"/>
-				</div>
-				</div>
-				<div className="right-poster">
-					<Comp oORd={this.props.oORd} isGoal={true} state={this.state.goal} callbackFromParent={this.myGoalCallback} format="GoalButton" title="poster2" content={<GP/>} buttonName="골대"/>
 				</div>
 			</div>
 		)
