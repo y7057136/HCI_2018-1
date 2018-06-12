@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Popup from "reactjs-popup";
-import QBvideo from "./ExampleYoutube";
+import Change from './content/CHANGEcontent.js';
 import './css/modal.css';
 
 const contentStyle = {
@@ -23,21 +23,39 @@ const outStyle = {
 class CustomModal extends Component{
   constructor(props) {
         super(props);
+        this.state = { open: false };
       }
+
+  closeModal = () => {
+    this.setState({ open: false });
+  };
+
+  goal = () => {
+      console.log("GOALLLLLL");
+  }
+
+  conditionalIncrement = () => {
+    console.log(this.props.last);
+    this.props.incrementCount();
+
+    {this.props.last ?
+      this.setState({ open: true }) :
+      console.log("fuck")
+    }
+  }
 
   render(){
     return(
+  <div>
   <Popup
     trigger={
       this.props.state ?
-        this.props.isGoal ?
-        <button style = {onStyle} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
-        <button style = {onStyle} onMouseDown={() => this.props.incrementCount()} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
+      <button style = {onStyle} onMouseLeave={() => this.props.callbackFromParent(false)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button> :
       <button style = {outStyle} onMouseEnter={() => this.props.callbackFromParent(true)} className={this.props.format} id={this.props.title}> {this.props.buttonName} </button>
     }
     modal
     contentStyle={contentStyle}
-    scroll
+    onClose={this.props.isGoal ? ()=>this.goal(): ()=>this.conditionalIncrement()}
   >
     {close => (
       <div className="modal">
@@ -56,6 +74,30 @@ class CustomModal extends Component{
       </div>
     )}
   </Popup>
+
+  <Popup
+    open={this.state.open}
+    closeOnDocumentClick
+    onClose={() => this.props.incrementCount()}
+  >
+  {close => (
+    <div className="modal">
+      <Change/>
+      <div className="actions">
+        <button
+          className="button"
+          onClick={() => {
+            console.log("modal closed ");
+            close();
+          }}
+        >
+        close
+        </button>
+      </div>
+    </div>
+  )}
+  </Popup>
+  </div>
 )
 
 }

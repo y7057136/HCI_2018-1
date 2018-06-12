@@ -24,7 +24,8 @@ class Offense extends Component {
 						ot: false,
 						te: false,
 						wr: false,
-						count: 0
+						count: 0,
+						oord: false
         };
     }
 
@@ -70,9 +71,13 @@ class Offense extends Component {
 
 	incrementClicked = () => {
 		this.setState({ count : this.state.count + 1});
-		if(this.state.count == 5){
+		if(this.state.count == 2){
+			this.setState({ oord : true});
+		}
+		if(this.state.count == 4){
+			console.log("change!");
 			this.props.callbackFromParent();
-			this.setState({ count : 0});
+			this.setState({ count : 0, oord : false});
 		}
 		console.log(this.state.count);
 	}
@@ -87,23 +92,23 @@ class Offense extends Component {
 				<div className="example-warper">
 				<div className="offense">
 
-					<Comp isGoal={false} state = {this.state.qb} incrementCount={this.incrementClicked} callbackFromParent={this.myQBCallback} format="QBButton" title="QB" content={<QB/>} buttonName="QB"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.qb} incrementCount={this.incrementClicked} callbackFromParent={this.myQBCallback} format="QBButton" title="QB" content={<QB/>} buttonName="QB"/>
 
-					<Comp isGoal={false} state = {this.state.back} incrementCount={this.incrementClicked} callbackFromParent={this.myBackCallback} format="FBButton" title="FB" content={<FB/>} buttonName="FB"/>
-					<Comp isGoal={false} state = {this.state.back} incrementCount={this.incrementClicked} callbackFromParent={this.myBackCallback} format="RBButton" title="RB" content={<RB/>} buttonName="RB"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.back} incrementCount={this.incrementClicked} callbackFromParent={this.myBackCallback} format="FBButton" title="FB" content={<FB/>} buttonName="FB"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.back} incrementCount={this.incrementClicked} callbackFromParent={this.myBackCallback} format="RBButton" title="RB" content={<RB/>} buttonName="RB"/>
 
-					<Comp isGoal={false} state = {this.state.c} incrementCount={this.incrementClicked} callbackFromParent={this.myCCallback} format="CButton" title="C" content={<C/>} buttonName="C"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.c} incrementCount={this.incrementClicked} callbackFromParent={this.myCCallback} format="CButton" title="C" content={<C/>} buttonName="C"/>
 
-					<Comp isGoal={false} state = {this.state.guard} incrementCount={this.incrementClicked} callbackFromParent={this.myGuardCallback} format="GButton" title="G1" content={<G/>} buttonName="G"/>
-					<Comp isGoal={false} state = {this.state.guard} incrementCount={this.incrementClicked} callbackFromParent={this.myGuardCallback} format="GButton" title="G2" content={<G/>} buttonName="G"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.guard} incrementCount={this.incrementClicked} callbackFromParent={this.myGuardCallback} format="GButton" title="G1" content={<G/>} buttonName="G"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.guard} incrementCount={this.incrementClicked} callbackFromParent={this.myGuardCallback} format="GButton" title="G2" content={<G/>} buttonName="G"/>
 
-					<Comp isGoal={false} state = {this.state.ot} incrementCount={this.incrementClicked} callbackFromParent={this.myOTCallback} format="OTButton" title="OT1" content={<OT/>} buttonName="OT"/>
-					<Comp isGoal={false} state = {this.state.ot} incrementCount={this.incrementClicked} callbackFromParent={this.myOTCallback} format="OTButton" title="OT2" content={<OT/>} buttonName="OT"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.ot} incrementCount={this.incrementClicked} callbackFromParent={this.myOTCallback} format="OTButton" title="OT1" content={<OT/>} buttonName="OT"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.ot} incrementCount={this.incrementClicked} callbackFromParent={this.myOTCallback} format="OTButton" title="OT2" content={<OT/>} buttonName="OT"/>
 
-					<Comp isGoal={false} state = {this.state.te} incrementCount={this.incrementClicked} callbackFromParent={this.myTECallback} format="TEButton" title="TE" content={<TE/>} buttonName="TE"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.te} incrementCount={this.incrementClicked} callbackFromParent={this.myTECallback} format="TEButton" title="TE" content={<TE/>} buttonName="TE"/>
 
-					<Comp isGoal={false} state = {this.state.wr} incrementCount={this.incrementClicked} callbackFromParent={this.myWRCallback} format="WRButton" title="WR1" content={<WR/>} buttonName="WR"/>
-					<Comp isGoal={false} state = {this.state.wr} incrementCount={this.incrementClicked} callbackFromParent={this.myWRCallback} format="WRButton" title="WR2" content={<WR/>} buttonName="WR"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.wr} incrementCount={this.incrementClicked} callbackFromParent={this.myWRCallback} format="WRButton" title="WR1" content={<WR/>} buttonName="WR"/>
+					<Comp isGoal={false} last={this.state.oord} state = {this.state.wr} incrementCount={this.incrementClicked} callbackFromParent={this.myWRCallback} format="WRButton" title="WR2" content={<WR/>} buttonName="WR"/>
 				</div>
 				</div>
 				<div className="right-poster">
